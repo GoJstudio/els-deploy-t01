@@ -1,0 +1,13 @@
+// abstracts
+@use '../abstracts/colors' as *;
+@use '../abstracts/type-scale' as *;
+
+// utilities
+@use '../utilities/container' as *;
+
+.container {
+  // @include container-flex;
+  @include container-flex(40px);
+  // @include container-grid;
+  // @include container-grid(4, 1fr, 40px);
+}

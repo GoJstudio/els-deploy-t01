@@ -1,0 +1,16 @@
+// abstracts
+@use 'abstracts/colors' as *;
+@use 'abstracts/type-scale' as *;
+
+// base
+@use 'base/base' as *;
+@use 'base/font-face' as *;
+@use 'base/typography' as *;
+
+:root {
+  --h3-dsk3: #{$h3-dsk};
+
+  @media screen and (max-width: 1440px) {
+    --h3-dsk3: 1.5rem;
+  }
+}

@@ -1,0 +1,37 @@
+// abstracts
+@use '../abstracts/colors' as *;
+@use '../abstracts/type-scale' as *;
+
+p {
+  font-size: $para-dsk-md;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+h1 {
+  font-size: $h1-dsk;
+}
+h2 {
+  font-size: $h2-dsk;
+}
+h3 {
+  // font-size: $h3-dsk;
+  font-size: var(--h3-dsk3);
+}
+h4 {
+  font-size: $h4-dsk;
+}
+h5 {
+  font-size: $h5-dsk;
+}
+h6 {
+  font-size: $h6-dsk;
+}
+
+// @media screen and (max-width: 1440px) {
+//   h3 {
+//     // font-size: $h3-mbl;
+//     font-size: 1.5rem;
+//   }
+// }

@@ -1,0 +1,41 @@
+// abstracts
+@use '@/styles/abstracts/colors' as *;
+@use '@/styles/abstracts/type-scale' as *;
+
+// utilities
+@use '@/styles/utilities/menus' as *;
+
+.navbar {
+  // background-color: #eee;
+  
+  .navlist {
+    display: flex;
+    gap: 8px;
+    
+    .navmenu {
+      @include menu-underlined;
+      // @include menu-filled;
+      text-transform: uppercase;
+      // background-color: #eee;
+
+      .sublist {
+        // z-index: -10;
+        position: absolute;
+        top: 100%; left: 10%;
+        width: 220px;
+        background-color: #aaa;
+        padding: 8px 16px;
+        display: none;
+
+        &.open {
+          display: block;
+        }
+
+        .submenu {
+          padding: 8px 16px;
+          background-color: #eee;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.985984rem;
+}
+
+h2 {
+  font-size: 2.48832rem;
+}
+
+h3 {
+  font-size: var(--h3-dsk3);
+}
+
+h4 {
+  font-size: 1.728rem;
+}
+
+h5 {
+  font-size: 1.44rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+:root {
+  --h3-dsk3: 2.06rem;
+}
+
+.navbar .navlist {
+  display: flex;
+}
+.navbar .navlist .navmenu {
+  color: #106A9C;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 8px;
+  padding: 8px 16px;
+  border: 1px solid black;
+}
+.navbar .navlist .navmenu:hover {
+  color: #08354E;
+}
+
+.featureCard p {
+  font-size: 0.8333333333rem;
+}
+
+h3 {
+  font-size: 2.06rem;
+  font-size: 2.06rem;
+  font-size: var(--h3-dsk3);
+}
+
+/*# sourceMappingURL=test.css.map */

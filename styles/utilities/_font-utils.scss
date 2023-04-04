@@ -1,0 +1,26 @@
+@use '../abstracts/type-scale' as *;
+
+@mixin disp1() {
+  font-size: $d1-dsk;
+  font-weight: 400;
+}
+@mixin disp2() {
+  font-size: $d1-dsk;
+  font-weight: 400;
+}
+@mixin disp3() {
+  font-size: $d3-dsk;
+  font-weight: 400;
+}
+@mixin disp4() {
+  font-size: $d4-dsk;
+  font-weight: 400;
+}
+@mixin disp5() {
+  font-size: $d5-dsk;
+  font-weight: 400;
+}
+@mixin disp6() {
+  font-size: $d6-dsk;
+  font-weight: 400;
+}

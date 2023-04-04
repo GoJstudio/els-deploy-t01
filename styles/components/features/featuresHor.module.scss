@@ -1,0 +1,23 @@
+// abstracts
+@use '@/styles/abstracts/colors' as *;
+@use '@/styles/abstracts/type-scale' as *;
+
+// utilities
+@use '@/styles/utilities/container' as *;
+@use '@/styles/utilities/flex' as *;
+
+.features {
+  width: 100vw;
+  background-color: $primary-light50;
+
+  .container {
+    @include container-flex(96px);
+    flex-direction: column;
+    padding: 100px 0px 70px;
+  
+    .cardsContainer {
+      @include container-flex;
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+// abstracts
+@use '@/styles/abstracts/colors' as *;
+@use '@/styles/abstracts/type-scale' as *;
+
+// utilities
+@use '@/styles/utilities/container' as *;
+@use '@/styles/utilities/menus' as *;
+
+
+.header {
+  padding: 16px 0;
+
+  .container {  
+    @include container-flex(0px);
+
+    .logo {
+      color: $primary;
+
+      h3 {
+
+      }
+
+      &:hover {
+        color: $primary-dark50;
+      }
+    }
+
+    .menuContent {
+      display: flex;
+      align-items: center;
+      gap: 72px;
+
+      .menu {
+        @include menu-filled;
+      }
+    }
+  }
+  // container-flex
+}

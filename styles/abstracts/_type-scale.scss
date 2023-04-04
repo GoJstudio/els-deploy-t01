@@ -1,0 +1,43 @@
+@use 'sass:math';
+
+// type-scale.......................................
+// 고정값
+$browser-fs-px: 16;
+$rem-unit: 1rem;
+
+// 디자인시스템 기준값
+$type-scale: 1.200;
+$html-fs-px: 16;
+
+// base font-size rem: 현재값 16px/16px = 1rem
+$fs-base-rem: math.div($html-fs-px, $browser-fs-px) * $rem-unit;
+
+// Font Size..........................................
+// Desktop - dsk
+// small-sm, medium-md, large-lg
+
+// paragraph desktop, font-size만 변화, 변수로 적용한다.
+$para-dsk-sm: math.div($fs-base-rem, $type-scale);
+$para-dsk-md: $fs-base-rem;
+$para-dsk-lg: $fs-base-rem * $type-scale;
+
+// heading desktop, 태그에서 font-weight(700)과 함께 적용된다.
+// $increment: 1;
+$h-start: 1;
+$d-start: 4;
+$h1-dsk: $fs-base-rem * math.pow($type-scale, $h-start + 5);
+$h2-dsk: $fs-base-rem * math.pow($type-scale, $h-start + 4);
+$h3-dsk: $fs-base-rem * math.pow($type-scale, $h-start + 3);
+$h4-dsk: $fs-base-rem * math.pow($type-scale, $h-start + 2);
+$h5-dsk: $fs-base-rem * math.pow($type-scale, $h-start + 1);
+$h6-dsk: $fs-base-rem * math.pow($type-scale, $h-start);
+
+// display desktop, font-size만 변화, 변수로 적용한다.
+$d1-dsk: $fs-base-rem * math.pow($type-scale, $d-start + 5);
+$d2-dsk: $fs-base-rem * math.pow($type-scale, $d-start + 4);
+$d3-dsk: $fs-base-rem * math.pow($type-scale, $d-start + 3);
+$d4-dsk: $fs-base-rem * math.pow($type-scale, $d-start + 2);
+$d5-dsk: $fs-base-rem * math.pow($type-scale, $d-start + 1);
+$d6-dsk: $fs-base-rem * math.pow($type-scale, $d-start);
+
+$h3-dsk: 2.06rem;

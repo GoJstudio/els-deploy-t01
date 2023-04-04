@@ -1,0 +1,26 @@
+// abstracts
+@use '@/styles/abstracts/colors' as *;
+@use '@/styles/abstracts/type-scale' as *;
+
+// utilities
+@use '@/styles/utilities/font-utils' as *;
+@use '@/styles/utilities/buttons' as *;
+
+.textCard {
+  background-color: #eee;
+  max-width: 400px;
+  border-radius: 16px;
+  padding: 64px 24px 24px;
+
+  .title {
+
+  }
+
+  .desc {
+    margin: 16px 0;
+  }
+
+  .btn {
+    @include btn-filled-primary;
+  }
+}

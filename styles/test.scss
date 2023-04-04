@@ -1,0 +1,50 @@
+// abstracts
+@use 'abstracts/colors' as *;
+@use 'abstracts/type-scale' as *;
+
+// base
+@use 'base/base' as *;
+@use 'base/font-face' as *;
+@use 'base/typography' as *;
+
+
+
+:root {
+  --h3-dsk3: #{$h3-dsk};
+}
+
+// base
+
+.navbar {
+  
+  .navlist {
+    display: flex;
+
+    .navmenu {
+      color: $primary;
+      font-size: $h6-dsk;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0 8px;
+      padding: 8px 16px;
+
+      border: 1px solid black;
+
+      &:hover {
+        color: $primary-dark50;
+      }
+    }
+  }
+}
+
+.featureCard {
+  p {
+    font-size: $para-dsk-sm;
+  }
+}
+
+h3 {
+  font-size: $h3-dsk;
+  font-size: #{$h3-dsk};
+  font-size: var(--h3-dsk3);
+}

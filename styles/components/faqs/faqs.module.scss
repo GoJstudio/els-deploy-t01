@@ -1,0 +1,25 @@
+// abstracts
+@use '@/styles/abstracts/colors' as *;
+@use '@/styles/abstracts/type-scale' as *;
+
+// utilities
+@use '@/styles/utilities/buttons' as *;
+@use '@/styles/utilities/container' as *;
+@use '@/styles/utilities/flex' as *;
+@use '@/styles/utilities/menus' as *;
+
+.faqs {
+  // background-color: $primary-light50;
+  padding: 96px 0;
+
+  .container {
+    @include container-flex(48px);
+    flex-direction: column;
+    // background-color: #eee;
+    
+    .faqsContainer {
+      @include flex-col-center(24px);
+      width: 70%;
+    }
+  }
+}
